@@ -1,0 +1,1 @@
+# Detect-PDF-in-Base64-text
