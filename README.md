@@ -1,1 +1,1 @@
-# Detect-PDF-in-Base64-text
+This script reads a document, looks for a Base64-encoded PDF, decodes it, and writes extracted PDF text to a file. The script runs with Python 2 and uses the PyPDF2 library to extract text from de-encoded PDFs.
