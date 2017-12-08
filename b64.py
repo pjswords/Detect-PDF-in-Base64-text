@@ -17,7 +17,8 @@ import sys
 # http://pythonhosted.org/PyPDF2/ and
 # http://automatetheboringstuff.com/chapter13/.
 
-# Regex for identifying and capturing Base64 with padding
+# Regex for identifying and capturing Base64 
+# (with padding, if present)
 b64Marker = '(^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$)'
 # Regex for identifying and capturing PDF
 pdfMarker = '(JVBERi0xLj.*)'
