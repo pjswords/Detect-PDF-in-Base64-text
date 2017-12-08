@@ -67,7 +67,7 @@ if b64Hit:
         for i in range(0, pdfReader.numPages):
             pageObj = pdfReader.getPage(i)
             extractedText = extractedText + pageObj.extractText()
-        # Write the extracted text to a file in UTF-8 format. Attempting to
+        # Write the extracted text to a file with UTF-8 encoding. Attempting to
         # write this text as ASCII will throw an error.
         try:
             new = codecs.open('./new.txt', 'w', 'utf8')
