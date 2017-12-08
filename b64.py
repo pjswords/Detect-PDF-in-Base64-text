@@ -34,7 +34,7 @@ else:
     print 'File not found!'
     sys.exit()
 
-# Read raw text from TDF document
+# Read raw text from document
 f = open(filePath, 'r')
 text = f.read()
 f.close()
@@ -60,7 +60,7 @@ if b64Hit:
         pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
         # The reader appears to be able to retrieve single pages.
         # Since the reader itself is not iterable, we'll have to
-        # settle for extracting text one page at a time. Pages are
+        # settle for extracting the text one page at a time. Pages are
         # zero-indexed, so the loop below will run from Page (0)
         # to Page (numPages-1).
         print 'This PDF has ' + str(pdfReader.numPages) + ' pages'
