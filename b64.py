@@ -12,9 +12,9 @@ import sys
 
 # This script reads a document, looks for a Base64-encoded PDF,
 # decodes it, and writes extracted PDF text to a file.
-# The script uses PyPDF2 to extract text from de-encoded PDFs.
-# Useful documentation for this library can be found at
-# http://pythonhosted.org/PyPDF2/ and
+# The script waas written for Python 2 uses PyPDF2 to extract text 
+# from de-encoded PDFs. Useful documentation for this library 
+# can be found at http://pythonhosted.org/PyPDF2/ and
 # http://automatetheboringstuff.com/chapter13/.
 
 # Regex for identifying and capturing Base64 
