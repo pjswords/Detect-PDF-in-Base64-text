@@ -20,7 +20,8 @@ import sys
 # Regex for identifying and capturing Base64 
 # (with padding, if present)
 b64Marker = '(^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$)'
-# Regex for identifying and capturing PDF
+# Regex for identifying and capturing PDF. This regex isn't 
+# particularly rigorous, but it's probably fine for most use cases.
 pdfMarker = '(JVBERi0xLj.*)'
 # Initialize variables for decoded PDF text and text 
 # extracted from a decoded document
