@@ -11,7 +11,9 @@ import re
 import sys
 
 # This script reads a document, looks for a Base64-encoded PDF,
-# decodes it, and writes extracted PDF text to a file.
+# decodes it, and writes extracted PDF text to a file. A typical 
+# use case for this would be to examine an XML document with a 
+# Base64-encoded payload.
 # The script waas written for Python 2 uses PyPDF2 to extract text 
 # from de-encoded PDFs. Useful documentation for this library 
 # can be found at http://pythonhosted.org/PyPDF2/ and
