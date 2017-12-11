@@ -36,9 +36,14 @@ else:
     sys.exit()
 
 # Read raw text from document
-f = open(filePath, 'r')
-text = f.read()
-f.close()
+try: 
+    f = open(filePath, 'r')
+    text = f.read()
+    f.close()
+except IOError as e:
+    print 'I/O error({0}): {1}'.format(e.errno, e.strerror)
+    print 'File cannot be opened.'
+    sys.exit()
 
 # Does the document contain Base64?
 b64Hit = re.search(pdfMarker, text)
