@@ -53,7 +53,7 @@ if b64Hit:
     pdfHit = re.search(pdfMarker, b64Hit.group(1))
     if pdfHit:
         print 'We have a pdfMarker hit!'
-        # Verify that the entire PDF document has been captured
+        # Allow user to verify that the entire PDF document has been captured
         print 'START: ' + pdfHit.group(1)[0:100]
         print 'END: ' + pdfHit.group(1)[len(pdfHit.group(1)) - 100 : len(pdfHit.group(1))]
         # Decode Base64
