@@ -14,7 +14,7 @@ import sys
 # decodes it, and writes extracted PDF text to a file. A typical 
 # use case for this would be to examine an XML document with a 
 # Base64-encoded payload.
-# The script was written for Python 2 uses PyPDF2 to extract text 
+# The script was written for Python 2 and uses PyPDF2 to extract text 
 # from de-encoded PDFs. Useful documentation for this library 
 # can be found at http://pythonhosted.org/PyPDF2/ and
 # http://automatetheboringstuff.com/chapter13/.
