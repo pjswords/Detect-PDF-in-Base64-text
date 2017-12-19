@@ -3,7 +3,7 @@
 # PJS, 10/13/2017 
 import base64
 import codecs
-import cStringIO
+import StringIO
 import io
 import os
 import PyPDF2
@@ -63,7 +63,7 @@ if b64Hit:
         decodedText = base64.b64decode(pdfHit.group(1).strip())
         # PyPDF2 appears to want to work with a PDF file object,
         # so let's give it one
-        pdfFileObj = cStringIO.StringIO()
+        pdfFileObj = StringIO.StringIO()
         pdfFileObj.write(decodedText)
         # Create a PDF reader object from the PDF file object
         pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
