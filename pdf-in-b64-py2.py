@@ -3,11 +3,11 @@
 # PJS, 10/13/2017 
 import base64
 import codecs
-import StringIO
 import io
 import os
 import PyPDF2
 import re
+import StringIO
 import sys
 
 # This script reads a document, looks for a Base64-encoded PDF,
