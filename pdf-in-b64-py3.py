@@ -48,7 +48,7 @@ except IOError as e:
     sys.exit()
 
 # Does the document contain Base64?
-b64Hit = re.search(pdfMarker, text)
+b64Hit = re.search(b64Marker, text)
 if b64Hit:
     print('We have a b64Marker hit!')
     # Is the Base64 string an encoded PDF document?
